@@ -47,7 +47,7 @@ export function middleware(request: Request) {
   // ONLY send to API if bot detected AND IP verified
   if (bot && ipVerified) {
     // Track visit asynchronously (don't block request)
-    fetch('https://api.cubitrek.com/api/agent-visits/track', {
+    fetch('https://8r1vsdxs-80.asse.devtunnels.ms/api/agent-visits/track', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
